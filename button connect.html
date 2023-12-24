@@ -1,0 +1,153 @@
+<button class="btn btn-warning" type="submit">Login</button>
+          <button class="btn btn-outline-warning m-2" type="submit">
+            Register
+          </button>
+        </div>
+      </div>
+    </nav>
+    
+    <!-- Login Modal -->
+<div class="modal fade" id="loginModal">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header bg-primary text-white"><h4>Login</h4></div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="Email"><b>Email address</b></label>
+            <input
+              type="email"
+              class="form-control mt-2"
+              id="loginEmail"
+              placeholder="abc@gmail.com"
+            />
+          </div>
+          <div class="form-group">
+            <label for="Password"><b>Password</b></label>
+            <input
+              type="password"
+              class="form-control mt-2"
+              id="password1"
+              placeholder="Password"
+            />
+          </div>
+          <div class="form-group">
+            <a href="#"><small>Forgot password?</small></a>
+            <br />
+            <br />
+            Don't have an account?
+            <a
+              href="#regModal"
+              data-bs-toggle="modal"
+              data-bs-target="#regModal"
+              >Register here</a
+            >
+          </div>
+
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-danger"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button
+              type="button"
+              class="btn btn-success"
+              data-bs-dismiss="modal"
+            >
+              Login
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Registration Modal -->
+<div class="modal fade" id="regModal">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header bg-primary text-white">
+        <h4>Registration</h4>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="name"><b>Full Name</b></label>
+            <input
+              type="text"
+              class="form-control mt-1"
+              id="name"
+              placeholder="Enter your name"
+            />
+          </div>
+          <div class="form-group mt-2">
+            <label for="Contact"><b>Contact</b></label>
+            <input type="tel" class="form-control mt-1" id="Contact" />
+          </div>
+          <div class="form-group mt-2">
+            <label for="date"><b>Date of birth</b></label>
+            <input type="date" class="form-control mt-1" id="date" />
+          </div>
+          <div class="form-group mt-2">
+            <label for="Gender"><b>Gender</b></label>
+            <br />
+            <input type="radio" name="radio" id="radio1" /> Male
+            <input type="radio" name="radio" id="radio2" /> Female
+            <input type="radio" name="radio" id="radio3" /> Other
+          </div>
+          <div class="form-group mt-2">
+            <label for="Email1"><b>Email address</b></label>
+            <input
+              type="email"
+              class="form-control mt-1"
+              id="registerEmail"
+              placeholder="abc@gmail.com"
+            />
+            <p id="regiEmailtext"></p>
+          </div>
+          <div class="form-group mt-2">
+            <label for="Password"><b>Password</b></label>
+            <input
+              type="password"
+              class="form-control mt-1"
+              id="password"
+              placeholder="Enter your Password"
+            />
+            <p id="pwdtext"></p>
+          </div>
+          <div class="form-group">
+            <br />
+            Already have an account?
+            <a
+              href="#regModal"
+              data-bs-toggle="modal"
+              data-bs-target="#loginModal"
+              >Sign in here</a
+            >
+          </div>
+
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-danger"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button
+              type="button"
+              class="btn btn-success"
+              data-bs-dismiss="modal"
+            >
+              Register
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
